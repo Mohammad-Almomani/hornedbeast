@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+// import logo from '../public/logo192.png';
 import './App.css';
+import Header from './header';
+import Footer from './footer';
+import Main from './main';
+import MainStretch from './mainStretch';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Header />
+      </div>
+      <div>
+        <Main />
+      </div>
+
+      <div>
+        <MainStretch />
+      </div>
+
+      <div>
+        {/* <img className='hornedBeast' src={pic}/> */}
+      </div>
+
+      <div>
+        <Footer />
+      </div>
+
     </div>
   );
 }
