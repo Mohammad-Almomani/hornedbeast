@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.hornedBeast {
+  width: 700px;
+  height: 500px;
+}
+
+.hornedBeastParagraph{
+  margin: 2% 0%;
+  font-size: 20px;
+}
+.beastTitle{
+  margin-bottom: 1.5%;
+}
