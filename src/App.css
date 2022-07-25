@@ -48,3 +48,8 @@
 .beastTitle{
   margin-bottom: 1.5%;
 }
+
+.cards {
+  display: flex;
+  justify-content: center;
+}

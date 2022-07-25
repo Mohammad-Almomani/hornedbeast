@@ -1,7 +1,9 @@
-import React from "react";
-import HornedBeast from "./HornedBeast";
+import Button from 'react-bootstrap/Button';
 import beast1 from "../images/ancestor_spirit.jpg";
 import beast2 from "../images/fallingstar-beast.webp";
+import Card from 'react-bootstrap/Card';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 let horned1 = require('./data.json');
 
@@ -26,16 +28,22 @@ let mythicalBeasts = [
     let horned = horned1.concat(mythicalBeasts);
 
 
-
-class Main extends React.Component {
-
-    render() {
-        return (
-        
-            horned.map( beast => 
-                <HornedBeast title={beast.title} image_url={beast.image_url} description={beast.description} />)
-        )
-    }
+function BasicExample() {
+  return (
+    horned.map( beast =>
+        <div className='cards'>
+    <Card style={{ width: '25rem' }}>
+      <Card.Img variant="top" src={beast.image_url} />
+      <Card.Body >
+        <Card.Title>{beast.title}</Card.Title>
+        <Card.Text>
+          {beast.description}
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    </div>
+  ));
 }
 
-export default Main;
+export default BasicExample;
