@@ -17,14 +17,6 @@ function App() {
       </div>
 
       <div>
-        <MainStretch />
-      </div>
-
-      <div>
-        {/* <img className='hornedBeast' src={pic}/> */}
-      </div>
-
-      <div>
         <Footer />
       </div>
 
