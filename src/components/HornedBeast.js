@@ -2,7 +2,7 @@ import React from "react";
 
 // reference for loop in react https://stackabuse.com/how-to-loop-in-react-jsx/
 
-class MainStretch extends React.Component {
+class HornedBeast extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -21,6 +21,7 @@ class MainStretch extends React.Component {
 
     render() {
         return (
+            
                 <div title="containerDiv">
                     <div className="beastTitle">
                         <h2> {this.props.title}</h2>
@@ -40,4 +41,4 @@ class MainStretch extends React.Component {
             )
     }
 }
-export default MainStretch;
+export default HornedBeast;

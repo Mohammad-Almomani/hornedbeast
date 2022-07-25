@@ -3,6 +3,7 @@ import beast1 from "../images/ancestor_spirit.jpg";
 import beast2 from "../images/fallingstar-beast.webp";
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import HornedBeast from "./HornedBeast"
 
 
 let horned1 = require('./data.json');
@@ -39,6 +40,10 @@ function BasicExample() {
         <Card.Text>
           {beast.description}
         </Card.Text>
+        {/* <button onClick={this.handleLike} >Likes {this.state.likes}</button>    
+        <button onClick={this.handleDisLike} >DisLikes{this.state.disLikes}</button>
+                        */}
+        <Button variant="primary" Likes {this.state.likes}>Go somewhere</Button>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>

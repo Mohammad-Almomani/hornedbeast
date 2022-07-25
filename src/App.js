@@ -2,22 +2,24 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/footer';
 import Main from './components/main';
-// import BasicExample from './components/navBar'
-import BasicExample from './components/cards';
+import NavBar from './components/navBar';
+import Cards from './components/cards';
 
 
 function App() {
   return (
     <div className="App">
       <div>
-        <BasicExample />
-        {/* <BasicExample /> */}
+        <NavBar />
+      </div>
+      <div>
+        <Cards />
       </div>
       <div>
         <Header />
       </div>
       <div>
-        <Main />
+        {/* <Main /> */}
       </div>
 
       <div>

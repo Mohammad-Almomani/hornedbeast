@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function navBar() {
+function BasicExample() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
@@ -22,4 +22,4 @@ function navBar() {
   );
 }
 
-export default navBar;
+export default BasicExample;
