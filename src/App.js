@@ -1,9 +1,8 @@
 import './App.css';
 import Header from './components/Header';
-import Footer from './components/footer';
-import Main from './components/main';
-import NavBar from './components/navBar';
-import Cards from './components/cards';
+import Footer from './components/Footer';
+import Main from './components/Main';
+import NavBar from './components/NavBar';
 
 
 function App() {
@@ -13,19 +12,14 @@ function App() {
         <NavBar />
       </div>
       <div>
-        <Cards />
-      </div>
-      <div>
         <Header />
       </div>
       <div>
-        {/* <Main /> */}
+        <Main />
       </div>
-
-      <div>
+      <div className='footer'>
         <Footer />
       </div>
-
     </div>
   );
 }

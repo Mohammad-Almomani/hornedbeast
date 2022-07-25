@@ -1,5 +1,5 @@
 import React from "react";
-import HornedBeast from "./cardsrender";
+import Cards from "./Cards";
 import beast1 from "../images/ancestor_spirit.jpg";
 import beast2 from "../images/fallingstar-beast.webp";
 
@@ -33,7 +33,7 @@ class Main extends React.Component {
         return (
         
             horned.map( beast => 
-                <HornedBeast title={beast.title} image_url={beast.image_url} description={beast.description} />)
+                <Cards title={beast.title} image_url={beast.image_url} description={beast.description} />)
         )
     }
 }
