@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin: 2% 2%;
+  background: linear-gradient(#3c889d 0%,#424346  40%) ;
 }
 
 .App-logo {
@@ -47,4 +49,20 @@
 }
 .beastTitle{
   margin-bottom: 1.5%;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+.cards button {
+  margin: 1%;
+  color: black;
+  border-radius: 25px;
+  background-color: antiquewhite;
+}
+
+.footer {
+  color: #61dafb;
 }

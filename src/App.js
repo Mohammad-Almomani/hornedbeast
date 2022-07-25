@@ -1,25 +1,25 @@
-// import logo from '../public/logo192.png';
 import './App.css';
-import Header from './header';
-import Footer from './footer';
-import Main from './main';
-import MainStretch from './mainStretch';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Main from './components/Main';
+import NavBar from './components/NavBar';
 
 
 function App() {
   return (
     <div className="App">
       <div>
+        <NavBar />
+      </div>
+      <div>
         <Header />
       </div>
       <div>
         <Main />
       </div>
-
-      <div>
+      <div className='footer'>
         <Footer />
       </div>
-
     </div>
   );
 }
