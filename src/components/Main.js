@@ -9,15 +9,16 @@ let horned1 = require('./data.json');
 
 let mythicalBeasts = [
     {
+        "_id": 21,
         "image_url": beast1,
         "title": "Ancestor Spirit",
         "description": "A glowing spirit that takes the form of a large deer, making it a menacing threat when charging at targets.",
         "keyword": "ancestor-spirit",
-        "horns": 4
+        "horns": 100
     },
 
     {
-        
+        "_id": 22,
         "image_url": beast2,
         "title": "Fallingstar Beast",
         "description": "Fallingstar Beast is a massive quadruped with a body covered in crystals.",
@@ -25,21 +26,40 @@ let mythicalBeasts = [
         "horns": 2
     }];
 
-    let horned = horned1.concat(mythicalBeasts);
+    let horned2 = horned1.concat(mythicalBeasts);
 
 
 
 class Main extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {value: ''
+        };
+    
+        
+      }
+    
 
-    render() {
-        return (
-            <div> 
+      
+      findHorned = (e) => {
+          console.log(e.target.value)
+          return this.setState({value: e.target.value}); 
+
+      }
+      render() {
+          console.log(this.state.value);
+          
+          return (
+              <div> 
+                <input type="text" placeholder="Search title or horns no." onChange={(e)=>this.findHorned(e)} />
                 <>
-            <Row xs={1} md={3} className="g-4">
+            <Row xs={1} sm={2} md={3} className="g-4">
                 {
-                    horned.map( beast => 
-                        <Col>
-                <Cards title={beast.title} image_url={beast.image_url} description={beast.description} />
+                    (((horned2.filter(beastInfo => (beastInfo.horns == this.state.value)) !='')? horned2.filter(beastInfo => beastInfo.horns == this.state.value):
+                    horned2.filter(beastInfo => (beastInfo.title.toLowerCase().includes(this.state.value.toLowerCase())) !=[])? horned2.filter(beastInfo =>beastInfo.title.toLowerCase().includes(this.state.value.toLowerCase())):
+                     horned2)).map( beast => 
+                        <Col key={beast._id}>
+                <Cards id={beast._id} title={beast.title} image_url={beast.image_url} description={beast.description} />
             </Col>
             )
             }

@@ -27,9 +27,6 @@ class Example extends React.Component {
           <Button variant="secondary" onClick={this.closeModal}>
             Close
           </Button>
-          <Button variant="primary" onClick={this.closeModal}>
-            {this.props.title}
-          </Button>
         </Modal.Footer>
       </Modal>
     </>
