@@ -14,7 +14,7 @@ function App() {
       <div>
         <Header />
       </div>
-      <div>
+      <div className='cardscrdas'>
         <Main />
       </div>
       <div className='footer'>
