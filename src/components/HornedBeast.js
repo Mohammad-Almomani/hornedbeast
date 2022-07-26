@@ -3,8 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// reference for loop in react https://stackabuse.com/how-to-loop-in-react-jsx/
-
 class Cards extends React.Component {
     constructor(props) {
         super(props);
@@ -24,7 +22,7 @@ class Cards extends React.Component {
     render() {
         return (
           <div className="cards">
-            <Card style={{ width: '25rem' }}>
+            <Card style={{ width: '23rem' }}>
               <Card.Img variant="top" src={this.props.image_url} />
               <Card.Body >
                 <Card.Title>{this.props.title}</Card.Title>

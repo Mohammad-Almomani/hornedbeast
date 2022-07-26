@@ -1,7 +1,9 @@
 import React from "react";
-import Cards from "./Cards";
+import Cards from "./HornedBeast";
 import beast1 from "../images/ancestor_spirit.jpg";
 import beast2 from "../images/fallingstar-beast.webp";
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 let horned1 = require('./data.json');
 
@@ -31,9 +33,16 @@ class Main extends React.Component {
 
     render() {
         return (
-        
-            horned.map( beast => 
-                <Cards title={beast.title} image_url={beast.image_url} description={beast.description} />)
+            <Row xs={1} md={3} className="g-4">
+                {
+                    horned.map( beast => 
+                <Col>
+                <Cards title={beast.title} image_url={beast.image_url} description={beast.description} />
+            </Col>
+            )
+            }
+            
+            </Row>
         )
     }
 }
