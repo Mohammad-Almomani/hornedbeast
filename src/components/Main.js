@@ -33,16 +33,19 @@ class Main extends React.Component {
 
     render() {
         return (
+            <div> 
+                <>
             <Row xs={1} md={3} className="g-4">
                 {
                     horned.map( beast => 
-                <Col>
+                        <Col>
                 <Cards title={beast.title} image_url={beast.image_url} description={beast.description} />
             </Col>
             )
             }
-            
             </Row>
+            </>
+            </div>
         )
     }
 }
