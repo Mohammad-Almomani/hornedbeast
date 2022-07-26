@@ -21,3 +21,15 @@ Finish time: 8:00 Pm
 
 Actual time needed to complete: 4 hours
 
+
+## class 03
+
+Number and name of feature:  React State and Props
+
+Estimate of time needed to complete: 10 hours
+
+Start time: 1:30 Pm
+
+Finish time: 3:30 Pm
+
+Actual time needed to complete: 2 hours
