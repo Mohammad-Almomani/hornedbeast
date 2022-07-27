@@ -31,8 +31,13 @@ class Cards extends React.Component {
                 <Modal show={this.state.show} handleShow={this.handleShow} handleClose={this.handleClose} title={this.props.title} description={this.props.description} image_url={this.props.image_url} likes={this.state.likes} disLikes={this.state.disLikes} />
               <Card.Body >
                 <Card.Title onClick={this.handleShow}>{this.props.title}</Card.Title>
+
+
                 <Card.Text onClick={this.handleShow}>
                   {this.props.description }
+                </Card.Text>
+                <Card.Text onClick={this.handleShow}>
+                 Number of Horns: {this.props.horns }
                 </Card.Text>
                 <Button variant="primary" onClick={this.handleLike}>❤ {this.state.likes}</Button>
                 <Button variant="primary" onClick={this.handleDisLike}>👎{this.state.disLikes}</Button>
