@@ -24,7 +24,7 @@ Actual time needed to complete: 4 hours
 
 ## class 03
 
-Number and name of feature:  React State and Props
+Number and name of feature: #2 React State and Props
 
 Estimate of time needed to complete: 10 hours
 
@@ -33,3 +33,16 @@ Start time: 1:30 Pm
 Finish time: 3:30 Pm
 
 Actual time needed to complete: 2 hours
+
+
+## class 04
+
+Number and name of feature: #1 React Forms
+
+Estimate of time needed to complete: 10 minutes
+
+Start time: 2:30 Pm
+
+Finish time: 2:35 Pm
+
+Actual time needed to complete: 5 minutes
