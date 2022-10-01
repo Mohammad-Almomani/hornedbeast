@@ -1,6 +1,7 @@
 # Horned Beasts
 
-my first react.js app.
+This is my first react.js app.
+[Horned Beasts](https://spiffy-gecko-5ccb8e.netlify.app/#home)
 
 in this app, you will find some of the most papular horned beasts and mythical horned beasts.
 
